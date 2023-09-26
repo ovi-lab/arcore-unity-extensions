@@ -65,10 +65,10 @@ namespace Google.XR.ARCoreExtensions.Editor.Internal
             {
                 if (!CheckARCoreLoader())
                 {
-                    Debug.LogError("ARCoreLoader is not enabled! " +
-                        "To ensure Extensions SDK can work properly on Android Platform, " +
-                        "navigate to 'Project Settings > XR Plug-in Management', " +
-                        "switch to Android tab and check 'ARCore' as the Plug-in Provider.");
+                    Debug.LogWarning("ARCoreLoader is not enabled! " +
+                                     "To ensure Extensions SDK can work properly on Android Platform, " +
+                                     "navigate to 'Project Settings > XR Plug-in Management', " +
+                                     "switch to Android tab and check 'ARCore' as the Plug-in Provider.");
                 }
 
                 Check64BitArch();
